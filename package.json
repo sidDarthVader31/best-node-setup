@@ -1,0 +1,29 @@
+{
+  "name": "node_sample_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run-local": "export environment='local'&& npx ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.6",
+    "eslint": "^9.0.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.4"
+  },
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "reflect-metadata": "^0.2.2",
+    "routing-controllers": "^0.10.4",
+    "typedi": "^0.10.0",
+    "typeorm": "^0.3.20"
+  }
+}
