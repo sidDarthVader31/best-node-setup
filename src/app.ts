@@ -7,9 +7,9 @@ const app = express();
 useContainer(Container);
 initRoute(app);
 
-app.get('/', (req, res)=>{
+app.get('/', (_, res)=>{
   res.send({
-    message: 'hel;lo'
+    message: 'hello'
   })
 })
 export default app;
