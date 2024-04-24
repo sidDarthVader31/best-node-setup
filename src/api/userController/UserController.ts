@@ -1,14 +1,11 @@
 import { Body, JsonController, Post } from 'routing-controllers';
 import { SignUpDTO } from './user.dto';
 import Response from '../../common/responseDto';
-import { Service } from 'typedi';
+import { inject } from 'inversify';
 
-
-@Service()
 @JsonController('/user')
 export class UserController {
-    constructor() {
-    }
+ constructor(@inject(SignUpDTO) private signupDTO: SignUpDTO) {}
 
   @Post('/signup')
   async addUser(@Body() body: SignUpDTO): Promise<Response<string>>{

@@ -1,5 +1,7 @@
 import { IsEmail, IsNotEmpty, IsPhoneNumber, IsString, MaxLength, MinLength } from "class-validator";
+import {injectable} from 'inversify';
 
+@injectable()
 export class SignUpDTO {
 
   // constructor(name: string, email: string, phoneNumber: string, password: string){
